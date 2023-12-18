@@ -1,3 +1,15 @@
+.input-home {
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-top: 50px;
+    width: 600px;
+    height: 40px;
+    margin-right: 50px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
 .task-div {
     display: flex;
     align-items: center;
@@ -26,3 +38,4 @@
     height: 50px;
     margin: 0 20px;
 }
+

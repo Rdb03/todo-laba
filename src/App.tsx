@@ -1,8 +1,8 @@
 import ToolBar from "./components/ToolBar/ToolBar.tsx";
 import {Route, Routes} from "react-router-dom";
-import Home from "./containers/Home/Home.tsx";
 import NotFound from "./components/NotFound/NoFound.tsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Tasks from "./containers/Tasks/Tasks.tsx";
 
 const App = () => (
     <>
@@ -12,7 +12,7 @@ const App = () => (
         <main>
             <Routes>
                 <Route path="/" element={
-                    <Home/>
+                    <Tasks/>
                 }/>
                 <Route path="*" element={
                     <NotFound />
