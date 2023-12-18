@@ -32,3 +32,10 @@ export const updateTask = createAsyncThunk<void, IApiTask>(
         await axiosApi.put(`/tasks/${task.id}.json`, task);
 });
 
+
+export const deleteTask = createAsyncThunk(
+    'task/delete',
+    async (id:string) => {
+        await axiosApi.delete(`/tasks/${id}.json`);
+    },
+);
